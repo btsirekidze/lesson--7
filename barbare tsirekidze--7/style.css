@@ -20,6 +20,9 @@ time, mark, audio, video {
 }
 .me{
   margin-left: 500px;
+   animation-duration: 5s;
+  animation-name: me;
+  animation-iteration-count: infinite;
 }
 
 .container{
@@ -54,15 +57,7 @@ time, mark, audio, video {
  100% {transform: rotate(-45deg);}
 
 }
-.me {
-  animation-duration: 5s;
-  animation-name: me;
-  animation-iteration-count: infinite;
 
-}
-.mee{
-  background-color: maroon;
-}
 .tree1{
   height: 0;
   width: 0;
@@ -284,29 +279,11 @@ time, mark, audio, video {
   position: relative;
   bottom:32px;
   right: 15px;
-  animation: smoke 5s infinite;
-  -webkit-animation: smoke 5s infinite;
+  
+  
 }
-@keyframes smoke{
-  50%{
-    transform: translateX(-5px) translateY(-10px);
-    opacity: 0.5;
-  }
-  100%{
-    transform: translateX(10px) translateY(-20px);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes smoke{
-  50%{
-    -webkit-transform: translateX(-5px) translateY(-10px);
-    opacity: 0.5;
-  }
-  100%{
-    -webkit-transform: translateX(10px) translateY(-20px);
-    opacity: 0;
-  }
-}
+  
+
 .s1,.s2,.s3{
   background-color: #423f3f;
   height: 10px;
@@ -337,7 +314,7 @@ time, mark, audio, video {
   bottom: 493px;
   border-radius: 50%;
   animation:snowfall 5s linear forwards infinite; 
-  -webkit-animation:snowfall 5s linear forwards infinite; 
+  
 }
 @keyframes snowfall{
   0%{
@@ -359,26 +336,7 @@ time, mark, audio, video {
     background-position: 100px 100px;
   }
 }
-@-webkit-keyframes snowfall{
-  0%{
-    background-position: 0 0;
-  }
-  20%{
-    background-position: 20px 20px;
-  }
-  40%{
-    background-position: 40px 40px;
-  }
-  60%{
-    background-position: 60px 60px;
-  }
-  80%{
-    background-position: 80px 80px;
-  }
-  100%{
-    background-position: 100px 100px;
-  }
-}
+
 .cover{
   background-color: rgba(255,255,255,0.2);
   height: 350px;
@@ -481,8 +439,7 @@ time, mark, audio, video {
 .sh1,.sh2,.sh3,.sh4,.sh5{
   background-color: #d33c3c;
   height: 6px;
-  transform: skew(30deg);
-  -webkit-transform: skew(30deg);
+ 
   width: 23px;
   border-radius: 15px;
   position: relative;
